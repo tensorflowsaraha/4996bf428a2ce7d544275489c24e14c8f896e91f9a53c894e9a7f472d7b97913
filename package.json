@@ -1,0 +1,12 @@
+{
+  "name": "circuit-breaker-c9e7e9",
+  "version": "1.0.0",
+  "description": "A circuit-breaker utility",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": ["circuit-breaker", "utility"],
+  "license": "MIT"
+}

